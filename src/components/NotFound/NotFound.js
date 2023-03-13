@@ -2,14 +2,13 @@ import Container from "../Container/Container";
 import styles from '../NavBar/NavBar.module.scss';
 
 
-const Favorite = () => {
+const NotFound = () => {
     return(
         <Container>
             <div >
-                <h1 className={styles.text}>Favorite</h1>
-                <p>Lorem ipsum</p>
+                <h1 className={styles.text}> 404 NOT FOUND</h1>
             </div>
         </Container>
     )
 }
-export default Favorite;
+export default NotFound;
