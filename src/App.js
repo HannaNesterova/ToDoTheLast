@@ -3,8 +3,8 @@ import NavBar from './components/NavBar/NavBar';
 import About from './components/About/About';
 import Favorite from './components/Favorite/Favorite';
 import Home from './components/Home/Home';
-//import { Routes } from 'react-router-dom';
-import { Switch, Route } from 'react-router-dom';
+import { Routes } from 'react-router-dom';
+import {  Route } from 'react-router-dom';
 import NotFound from './components/NotFound/NotFound';
 
 
@@ -15,12 +15,12 @@ const App = () => {
     <main>
       <NavBar />
       <Container>
-      <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/favorite" component={Favorite} />
+      <Routes>
+          <Route path="/Home" component={Home} />
+          <Route path="/About" component={About} />
+          <Route path="/Favorite" component={Favorite} />
           <Route path="*" component={NotFound} />
-      </Switch>
+      </Routes>
       </Container>
   </main>
   );
