@@ -9,12 +9,12 @@ import Home from './components/Home/Home';
 const App = () => {
   return (
     <main>
-    <NavBar />
-    <Container>
-        <Home />
-        <About />
-        <Favorite />
-    </Container>
+      <NavBar />
+      <Container>
+          <Home />
+          <About />
+          <Favorite />
+      </Container>
   </main>
   );
 };
