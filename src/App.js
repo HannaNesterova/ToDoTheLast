@@ -3,6 +3,8 @@ import NavBar from './components/NavBar/NavBar';
 import About from './components/About/About';
 import Favorite from './components/Favorite/Favorite';
 import Home from './components/Home/Home';
+import { Routes } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
 
 
@@ -11,9 +13,11 @@ const App = () => {
     <main>
       <NavBar />
       <Container>
-          <Home />
-          <About />
-          <Favorite />
+      <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/favorite" element={<Favorite />} />
+        </Routes>
       </Container>
   </main>
   );
