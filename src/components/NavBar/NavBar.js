@@ -12,10 +12,6 @@ const NavBar = () => {
                     <a href="/Favorite" className={styles.item_right}>Favorite</a>
                 </ul>
             </nav>
-            <div className={styles.text}>
-                <h1>HOME</h1>
-                <p>Lorem ipsum</p>
-            </div>
         </Container>
     )
 }
