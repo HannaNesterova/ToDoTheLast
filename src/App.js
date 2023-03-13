@@ -16,11 +16,11 @@ const App = () => {
       <NavBar />
       <Container>
       <Routes>
-          <Route path="/Home" component={Home} />
-          <Route path="/About" component={About} />
-          <Route path="/Favorite" component={Favorite} />
-          <Route path="*" component={NotFound} />
-      </Routes>
+            <Route path="/" component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/favorite" component={Favorite} />
+        <Route path="*" component={NotFound} />
+            </Routes>
       </Container>
   </main>
   );
