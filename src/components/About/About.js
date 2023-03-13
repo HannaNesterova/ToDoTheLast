@@ -13,8 +13,8 @@ const About = () => {
                     <a href="/Favorite" className={styles.item_right}>Favorite</a>
                 </ul>
             </nav> */}
-            <div className={styles.text}>
-                <h1>ABOUT</h1>
+            <div >
+                <h1 className={styles.text}>ABOUT</h1>
                 <p>Lorem ipsum</p>
             </div>
         </Container>

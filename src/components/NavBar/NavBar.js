@@ -3,7 +3,7 @@ import styles from './NavBar.module.scss';
 
 const NavBar = () => {
     return(
-        <Container>
+        <div>
             <nav className={styles.nav}>
                 <ul className={styles.flex}>
                     <a href="/" className={styles.item_left}><span className="fa fa-tasks"></span></a>
@@ -12,7 +12,7 @@ const NavBar = () => {
                     <a href="/Favorite" className={styles.item_right}>Favorite</a>
                 </ul>
             </nav>
-        </Container>
+        </div>
     )
 }
 export default NavBar;
