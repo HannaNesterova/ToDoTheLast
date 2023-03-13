@@ -2,7 +2,7 @@ import Container from "../Container/Container";
 import styles from '../NavBar/NavBar.module.scss';
 
 
-const About = () => {
+const Favorite = () => {
     return(
         <Container>
             <nav className={styles.nav}>
@@ -14,10 +14,10 @@ const About = () => {
                 </ul>
             </nav>
             <div>
-                <h1>ABOUT</h1>
+                <h1>Favorite</h1>
                 <p>Lorem ipsum</p>
             </div>
         </Container>
     )
 }
-export default About;
+export default Favorite;

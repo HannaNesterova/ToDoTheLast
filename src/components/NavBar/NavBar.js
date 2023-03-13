@@ -1,8 +1,7 @@
 import Container from "../Container/Container";
-import styles from '../NavBar/NavBar.module.scss';
+import styles from './NavBar.module.scss';
 
-
-const About = () => {
+const NavBar = () => {
     return(
         <Container>
             <nav className={styles.nav}>
@@ -13,11 +12,11 @@ const About = () => {
                     <a href="/Favorite" className={styles.item_right}>Favorite</a>
                 </ul>
             </nav>
-            <div>
-                <h1>ABOUT</h1>
+            <div className={styles.text}>
+                <h1>HOME</h1>
                 <p>Lorem ipsum</p>
             </div>
         </Container>
     )
 }
-export default About;
+export default NavBar;
