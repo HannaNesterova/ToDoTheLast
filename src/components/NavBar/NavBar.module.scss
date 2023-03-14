@@ -18,15 +18,32 @@
     display: inline;
     float: left;
     color: white;
+    font-weight: 700;
 }
 .item_right a{
     display: inline;
     float: right;
-    color: white;
+    color: aliceblue;
     text-decoration: none;
     margin-left: 15px;
+    font-weight: 700;
 }
 .text{
     text-align: center;
     margin-top: 20px;
 }
+.item_left a:hover,
+.item_left a:focus,
+.item_left a:active {
+    color: $color-warning;
+    cursor: pointer;
+}
+
+.item_right a:hover,
+.item_right a:focus,
+.item_right a:active {
+    color: $color-warning;
+    cursor: pointer;
+}
+
+
