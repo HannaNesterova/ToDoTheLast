@@ -6,20 +6,24 @@
     padding: 15px;
 }
 .flex{
-    display: flex;
-    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
-a{
-    margin-left: 15px;
-    color: white;
-    font-size: 15px;
-    text-decoration: none;
-}
+
+
 .item_left{
-    flex-grow: 2;
+    display: inline;
+    float: left;
+    color: white;
 }
 .item_right{
-    flex-grow: 0;
+    display: inline;
+    float: right;
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
 }
 .text{
     text-align: center;
