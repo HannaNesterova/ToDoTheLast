@@ -10,15 +10,16 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
+    color: white;
 }
 
 
-.item_left{
+.item_left a{
     display: inline;
     float: left;
     color: white;
 }
-.item_right{
+.item_right a{
     display: inline;
     float: right;
     color: white;
