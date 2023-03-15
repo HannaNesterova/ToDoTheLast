@@ -1,12 +1,13 @@
 import Container from "../Container/Container";
 import styles from '../NavBar/NavBar.module.scss';
+import PageTitle from "../PageTitle/PageTitle";
 
 
 const About = () => {
     return(
         <Container>
+            <PageTitle>ABOUT</PageTitle>
             <div >
-                <h1 className={styles.text}>ABOUT</h1>
                 <p>Lorem ipsum</p>
             </div>
         </Container>
