@@ -1,5 +1,4 @@
 import Container from "../Container/Container";
-import styles from '../NavBar/NavBar.module.scss';
 import PageTitle from "../PageTitle/PageTitle";
 
 

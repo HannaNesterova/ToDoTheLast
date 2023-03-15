@@ -3,7 +3,7 @@ import styles from './PageTtitle.module.scss';
 
 
 const PageTitle = (props)=> {
-    return <h2 className={styles.title}>{props.children}</h2>
+    return <h2 className={styles.title}>{props.children}</h2>;
 }
 
 export default PageTitle;

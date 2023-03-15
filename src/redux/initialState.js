@@ -18,6 +18,12 @@ const initialState = {
       title: 'Games',
       icon: 'gamepad',
     },
+    {
+      id: 4,
+      listId:2,
+      title: 'Songs',
+      icon: 'music',
+    }
   ],
   lists: [
     {
