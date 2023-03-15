@@ -13,6 +13,7 @@ const { listId } = useParams();
 //const listId = 1; 
 const columns = useSelector(state => getColumnsByList(state, listId));
 const listData = useSelector(state => getListById(state, listId));
+const searchString = useSelector(state => state.searchString);
   
 
   return (
@@ -25,7 +26,7 @@ const listData = useSelector(state => getListById(state, listId));
       <p className={styles.description}>
         {listData.description}
       </p>
-      <SearchForm />
+      <SearchForm searchString={searchString}/>
       <section className={styles.columns}>
         {columns.map((column) => (
           <Column key={column.id} {...column} />

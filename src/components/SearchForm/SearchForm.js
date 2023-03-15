@@ -6,8 +6,9 @@ import { useState } from 'react';
 import { updateSearch } from '../../redux/store';
 
 
-const SearchForm = () => {
-    const [searchLet, setSearchLet] = useState('');
+const SearchForm = ({searchString}) => {
+    
+    const [searchLet, setSearchLet] = useState(searchString);
     const dispatch = useDispatch();
 
     const handleSubmit = (e) => {
@@ -30,4 +31,4 @@ const SearchForm = () => {
   };
 
 
-export default SearchForm;
+  export default SearchForm;
