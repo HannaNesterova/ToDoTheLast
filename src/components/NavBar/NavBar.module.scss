@@ -32,9 +32,7 @@
     text-align: center;
     margin-top: 20px;
 }
-.item_left a:hover,
-.item_left a:focus,
-.item_left a:active {
+.item_left a:hover {
     color: $color-warning;
     cursor: pointer;
 }

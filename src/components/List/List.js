@@ -3,9 +3,11 @@ import Column from '../Column/Column.js';
 import ColumnForm from '../ColumnForm/ColumnForm';
 import { useSelector } from 'react-redux';
 import {getAllColumns} from '../../redux/store';
+//import { getListById } from '../../redux/store';
 
 const List = () => {
   const columns = useSelector(getAllColumns);
+  //const listData = useSelector(getListById);
 
   return (
     <div className={styles.list}>
