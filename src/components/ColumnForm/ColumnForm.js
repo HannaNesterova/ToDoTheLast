@@ -4,14 +4,15 @@ import Button from '../Button/Button';
 import { useDispatch } from 'react-redux';
 import { addColumn } from '../../redux/store';
 
-const ColumnForm = () => {
+
+const ColumnForm =  ({ listId }) => {
   const [title, setTitle] = useState('');
   const [icon, setIcon] = useState('');
   const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(addColumn({ title, icon }));
+    dispatch(addColumn({ title, icon, listId }));
     setTitle('');
     setIcon('');
   };
@@ -29,7 +30,7 @@ const ColumnForm = () => {
         value={icon}
         onChange={(e) => setIcon(e.target.value)}
       />
-      <Button>Add Column</Button>
+      <Button disabled={!title || !icon}>Add Column</Button>
     </form>
   );
 };

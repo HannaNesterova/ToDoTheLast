@@ -29,7 +29,7 @@ const listData = useSelector(state => getListById(state, listId));
           <Column key={column.id} {...column} />
         ))}
       </section>
-      <ColumnForm />  
+      <ColumnForm listId={listId} />  
     </div>
   );
 };
