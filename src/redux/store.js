@@ -21,8 +21,8 @@ export const getListById = ({ lists }, listId) => lists.find(list => list.id ===
 export const getColumnsByList = (state, listId ) => state.columns.filter(column => column.listId === listId);
 export const addList = payload => ({type: 'ADD_LIST', payload})
 
-export const toggleCardFavorite = (cardId) => ({ type: 'TOGGLE_CARD_FAVORITE', payload: cardId });
-
+export const toggleCardFavorite = (cardId, isFavorite) => ({ type: 'TOGGLE_CARD_FAVORITE', payload: {cardId, isFavorite} });
+//export const toggleCardFavorite = payload => ({ type: 'TOGGLE_CARD_FAVORITE', payload });
 
 
 
