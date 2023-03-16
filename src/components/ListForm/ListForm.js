@@ -24,7 +24,7 @@ const ListForm =  ({ listId }) => {
         value={title}
         onChange={(e) => setTitle(e.target.value)}
       />
-      Icon:
+      Description:
       <input
         type="text"
         value={description}
