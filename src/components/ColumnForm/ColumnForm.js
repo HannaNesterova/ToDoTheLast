@@ -18,13 +18,13 @@ const ColumnForm =  ({ listId }) => {
   };
   return (
     <form className={styles.columnForm} onSubmit={handleSubmit}>
-      Title:
+           <label htmlFor="title-input">Title:</label>
       <input
         type="text"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
       />
-      Icon:
+         <label htmlFor="icon-input">Icon:</label>
       <input
         type="text"
         value={icon}
