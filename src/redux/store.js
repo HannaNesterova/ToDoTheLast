@@ -19,6 +19,7 @@ export const addCard =  payload => ({type: 'ADD_CARD', payload}) ;
 export const updateSearch = payload => ({type: 'UPDATE_SEARCHSTRING', payload});
 export const getListById = ({ lists }, listId) => lists.find(list => list.id === listId)
 export const getColumnsByList = (state, listId ) => state.columns.filter(column => column.listId === listId);
+export const addList = payload => ({type: 'ADD_LIST', payload})
 
 
 
@@ -42,6 +43,10 @@ const reducer = (state = defaultState.initialState, action) => {
       case 'UPDATE_SEARCHSTRING':
       return { ...state, 
         searchString: action.payload };
+        case 'ADD_LIST':
+          return{ ...state,
+            lists: [...state.lists, {...action.payload, id: shortid()}]
+          }
       default:
         return state;
   }
