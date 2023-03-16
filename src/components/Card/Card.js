@@ -1,13 +1,11 @@
 import styles from './Card.module.scss';
-import { useSelector } from 'react-redux';
 
 
 
 
 const Card = (props) => {
-  const cards = useSelector(state => state.cards);
+  // const cards = useSelector(state => state.cards);
 
-  // const card = cards.find(card => card.id === props.id);
 
   return (
     <li className={styles.card}>
