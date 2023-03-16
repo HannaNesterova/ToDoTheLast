@@ -1,4 +1,4 @@
-@use "sass:math";
+
 @import '../../styles/settings.scss';
 
 
@@ -19,6 +19,7 @@
   color: $color-warning;
   font-size: ($base-size * 2);
   vertical-align: middle;
-  position: relative;
-  top: - math.div($base-size, 3);
+  position: absolute;
+  top: 7px;
+  left: 300px;
 }

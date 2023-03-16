@@ -14,7 +14,7 @@ const SearchForm = ({searchString}) => {
         return () => {
         dispatch(updateSearch(""));
         };
-        }, []);
+        }, [dispatch]);
     
     const handleSubmit = (e) => {
         e.preventDefault();
