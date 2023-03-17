@@ -1,31 +1,69 @@
 
-@import '../../styles/settings.scss';
+// @import '../../styles/settings.scss';
+
+// .card {
+//   position: relative;
+//   background: $color-light;
+//   border: 1px solid lighten($color-dark, 60%);
+//   padding: $base-size;
+//   margin: 0 0 $base-size 0;
+//   border-radius: $radius;
+//   display: flex;
+//   justify-content: space-between;
+//   font-weight: bold;
+// }
+// .icon::before {
+//   padding-right: $base-size;
+//   color: $color-warning;
+//   font-size: ($base-size)*2;
+//   vertical-align: middle;
+//   position: absolute;
+//   top: 7px;
+//   left: 80%;
+//   cursor: pointer;
+//   vertical-align: middle;
+// }
+
+// .icon.icon.active::before {
+//   color:$color-success;
+// }
 
 
-.card {
-  position: relative;
-  background: $color-light;
-  border: 1px solid lighten($color-dark, 60%);
-  padding: $base-size;
-  margin: 0 0 $base-size 0;
-  border-radius: $radius;
-  display: flex;
-  justify-content: space-between;
-  font-weight: bold;
-}
 
-.icon::before {
-  padding-right: $base-size;
-  color: $color-warning;
-  font-size: ($base-size)*2;
-  vertical-align: middle;
+@import '../../styles/settings.scss'; 
+ 
+.card { 
+  position: relative; 
+  background: $color-light; 
+  border: 1px solid lighten($color-dark, 60%); 
+  padding: $base-size; 
+  margin: 0 0 $base-size 0; 
+  border-radius: $radius; 
+  display: flex; 
+  justify-content: space-between; 
+  font-weight: bold; 
+} 
+ 
+.button { 
+  background-color: $color-light; 
+  color: lighten($color-dark, 60%); 
+  border: none; 
+  padding: 0; 
+  font-size: $base-size * 2; 
+  cursor: pointer;
   position: absolute;
   top: 7px;
   left: 80%;
-  cursor: pointer;
-  vertical-align: middle;
-}
-
-.icon.favorite::before {
-  color: rgb(21, 15, 136);
+} 
+ 
+.remove_button { 
+  color: $color-dark; 
+  text-align: center; 
+  cursor: pointer; 
+  border: none; 
+  background-color: inherit; 
+} 
+ 
+.active { 
+  color: $color-warning; 
 }
