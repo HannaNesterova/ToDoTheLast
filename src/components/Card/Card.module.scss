@@ -24,9 +24,8 @@
   left: 80%;
   cursor: pointer;
   vertical-align: middle;
-
 }
 
-.icon::before:active{
-  color: aqua;
+.icon.favorite::before {
+  color: rgb(21, 15, 136);
 }

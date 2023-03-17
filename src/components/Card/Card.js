@@ -1,11 +1,18 @@
-import React, { useState } from 'react';
+
+import { useDispatch } from 'react-redux';
+import { toggleCardFavorite } from '../../redux/store';
 import styles from './Card.module.scss';
+//import { useState } from 'react';
+
 
 const Card = (props) => {
-  const [isFavorite, setIsFavorite] = useState(false);
+  const dispatch = useDispatch();
+
 
   const toggleFavorite = () => {
-    setIsFavorite(!isFavorite);
+    dispatch(toggleCardFavorite(props.id));
+
+    console.log(props.id);
   };
 
   return (
@@ -13,12 +20,12 @@ const Card = (props) => {
       <div className={styles.cardTitle}>
         {props.title}
         <span
-          className={`${styles.icon} fa fa-star${isFavorite ? '' : '-o'}`}
-          onClick={toggleFavorite}
+         className={styles.icon + ' fa fa-star-o'}
+          onClick={toggleFavorite}  
         ></span>
       </div>
     </li>
   );
 };
 
-export default Card;
+export default Card; 
