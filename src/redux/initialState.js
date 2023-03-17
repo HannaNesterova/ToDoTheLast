@@ -49,6 +49,7 @@ const initialState = {
   ],
   
   searchString: '',
+  favorites: [],
 
 };
 

@@ -1,34 +1,24 @@
-import Container from "../Container/Container";
-import PageTitle from "../PageTitle/PageTitle";
-import { useSelector,useDispatch } from 'react-redux';
-import { getFilteredCards, toggleCardFavorite } from "../../redux/store";
 import Card from "../Card/Card";
+import { getFavoriteCard } from "../../redux/store";
+import { useSelector } from "react-redux";
+import styles from './Favorite.module.scss';
 
-
-
-const Favorite = () => {
-    const dispatch = useDispatch();
-
-    const favoriteCards = useSelector(state =>
-        getFilteredCards(state, 'favorite', '')
-      );
-      
-      const toggleFavorite = (cardId) => {
-        dispatch(toggleCardFavorite(cardId));
-      };
-    
-      
-    return(
-        <Container>
-            <div >
-                <PageTitle>Favorite</PageTitle>
-                {favoriteCards.map(card => (
-                <Card key={card.id} title={card.title} icon={card.icon}  isFavorite={card.isFavorite}
-                toggleFavorite={() => toggleFavorite(card.id)} />
-                    ))}
-                <p>Lorem ipsum</p>
-            </div>
-        </Container>
-    )
-}
-export default Favorite;
+const Favorite = () => { 
+ 
+    const cards = useSelector(getFavoriteCard); 
+     
+    return ( 
+       <div> 
+          <h1 className={styles.title}>Favorite</h1> 
+          <div className={styles.favoriteColumn}> 
+             <article className={styles.column}> 
+                <ul className={styles.cards}> 
+                   {cards.map((card) => ( 
+                   <Card key={card.id} title={card.title} isFavorite={card.isFavorite} id={card.id} />))} 
+                </ul> 
+             </article> 
+          </div> 
+       </div> 
+    ); 
+ }; 
+ export default Favorite;

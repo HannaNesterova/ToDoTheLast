@@ -24,5 +24,9 @@
   left: 80%;
   cursor: pointer;
   vertical-align: middle;
+
 }
 
+.icon::before:active{
+  color: aqua;
+}
