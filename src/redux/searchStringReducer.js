@@ -1,6 +1,7 @@
-
+//state
+export const searchString = (state) => state.searchString;
 //action
-export const updateSearch = payload => ({type: 'UPDATE_SEARCHSTRING', payload});
+export const updateSearch = payload => ({type: UPDATE_SEARCHSTRING, payload});
 const UPDATE_SEARCHSTRING = updateSearch('UPDATE_SEARCHSTRING');
 
 
