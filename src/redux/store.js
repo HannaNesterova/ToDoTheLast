@@ -1,15 +1,13 @@
 import { legacy_createStore as createStore, combineReducers } from "redux";
 import initialState from './initialState';
-
-
 import listsReducer from './listsRedux'
 import columnsReducer from "./columnsReducer";
 import cardsReducer from "./cardsReducer";
 import searchStringReducer from "./searchStringReducer";
 
-const state = {
-  initialState: initialState,
-}
+// const state = {
+//   initialState: initialState,
+// }
 
 
 /*const reducer = (state = defaultState.initialState, action) => {
@@ -61,6 +59,7 @@ const reducer = combineReducers(subreducers);
 
 const store = createStore(
   reducer,
+  initialState,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 

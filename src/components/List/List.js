@@ -10,11 +10,15 @@ import SearchForm from './../SearchForm/SearchForm';
 const List = () => {
 
 const { listId } = useParams();
-//const listId = 1; 
+
 const columns = useSelector(state => getColumnsByList(state, listId));
 const listData = useSelector(state => getListById(state, listId));
 const searchString = useSelector(state => state.searchString);
   
+if (!listData) {
+  return null; // or some other fallback UI
+}
+
 
   return (
     <div className={styles.list}>
