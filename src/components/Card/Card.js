@@ -24,10 +24,12 @@ const Card = (props) => {
                     <button onClick={toggle} className={clsx(styles.button, props.isFavorite && styles.active)}> 
                     <span className="fa fa-star-o" /> 
                     </button> 
+                </div> 
+                <div>
                     <button onClick={remove} className={clsx(styles.remove_button, props.isFavorite && styles.active)}> 
                     <span className="fa fa-trash" /> 
                     </button> 
-                </div> 
+                </div>
             </div> 
         </li> 
     ); 
