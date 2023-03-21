@@ -25,7 +25,13 @@
   position: absolute;
   top: 7px;
   left: 70%;
-} 
+
+  &:active,
+  &:focus {
+    color: $color-warning;
+    outline: none;
+  }
+}
  
 .remove_button { 
   color: $color-dark; 
@@ -39,6 +45,3 @@
   left: 85%;
 } 
  
-.active { 
-  color: $color-warning; 
-}
