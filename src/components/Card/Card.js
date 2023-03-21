@@ -11,8 +11,10 @@ const Card = (props) => {
         dispatch(toggleCardFavorite(props.id)); 
     }; 
     const remove = () => {
+        const payload = props.id;
+        dispatch(removeCard(payload));
         console.log("removing card with id:", props.id);
-        dispatch(removeCard(props.id));
+       
     }
  
     return ( 
