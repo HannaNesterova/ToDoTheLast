@@ -27,7 +27,8 @@
   left: 70%;
 
   &:active,
-  &:focus {
+  &:focus,
+  &.active {
     color: $color-warning;
     outline: none;
   }
@@ -43,5 +44,10 @@
   background-color: inherit; 
   top: 7px;
   left: 85%;
+
+  &:hover{
+    color: $color-warning;
+    outline: none;
+  }
 } 
  

@@ -2,10 +2,12 @@
 import styles from "./Card.module.scss"; 
 import { useDispatch } from "react-redux"; 
 import { toggleCardFavorite, removeCard } from "../../redux/cardsReducer"; 
+
 import clsx from "clsx"; 
  
 const Card = (props) => { 
     const dispatch = useDispatch(); 
+
     
     const toggle = () => { 
         dispatch(toggleCardFavorite(props.id)); 
